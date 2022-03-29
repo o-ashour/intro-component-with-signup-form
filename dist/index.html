@@ -19,12 +19,24 @@
   </div>
 
   <form class="profile-form">
-      <input type="text" name="first-name" id="first-name" placeholder="First Name">
-      <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-      <input type="text" name="email" id="email" placeholder="Email Address">
-      <input type="text" name="password" id="password" placeholder="Password">
+      <div class="input-full">
+        <img class="error-icon" src="/intro-component-with-signup-form/dist/images/icon-error.svg" alt="">
+        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+      </div>
+      <div class="input-full">
+        <img class="error-icon" src="/intro-component-with-signup-form/dist/images/icon-error.svg" alt="">
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+      </div>
+      <div class="input-full">
+        <img class="error-icon" src="/intro-component-with-signup-form/dist/images/icon-error.svg" alt="">
+        <input type="text" name="email" id="email" placeholder="Email Address">
+      </div>
+      <div class="input-full">
+        <img class="error-icon" src="/intro-component-with-signup-form/dist/images/icon-error.svg" alt="">
+        <input type="text" name="password" id="password" placeholder="Password">        
+      </div>
       <button type="submit" class="submit-btn">CLAIM YOUR FREE TRIAL</button>
-      <small>By clicking the button, you are agreeing to our <span>Terms and Services</span>
+      <small>By clicking the button, you are agreeing to our <a href="#"><span>Terms and Services</span></a>
       </small>
   </form>
   <script src="./script.js"></script>
