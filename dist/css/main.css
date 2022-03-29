@@ -46,13 +46,18 @@ p {
   margin-top: 0;
 }
 
+@media (min-height: 900px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 body {
   background-image: url("/intro-component-with-signup-form/dist/images/bg-intro-mobile.png");
   background-color: #ff7a7a;
   margin: 1.5em;
   font-family: 'Poppins', sans-serif;
   color: #fef6ed;
-  overflow: hidden;
 }
 
 .main-text {
@@ -98,4 +103,40 @@ body {
   border-radius: 0.6em;
   -webkit-box-shadow: 0 0.5em rgba(20, 20, 20, 0.2);
           box-shadow: 0 0.5em rgba(20, 20, 20, 0.2);
+}
+
+.profile-form input {
+  padding: 1em 1em;
+  color: #3e3c49cf;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border: thin solid rgba(220, 220, 220, 0.9);
+  border-radius: 0.3em;
+}
+
+.profile-form input:focus {
+  outline: none;
+}
+
+.profile-form .submit-btn {
+  background-color: #38cc8c;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 1.25em 0em;
+  font-size: 0.9rem;
+  border-radius: 0.4em;
+}
+
+.profile-form small {
+  color: #b9b6d3;
+  text-align: center;
+  padding: 0 1.4em;
+  font-size: 0.7rem;
+  line-height: 1.8;
+}
+
+.profile-form small span {
+  color: #ff7a7a;
+  font-weight: 600;
 }

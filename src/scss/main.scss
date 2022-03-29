@@ -7,13 +7,18 @@
   @return map-get($font-weights, $weight-name);
 };
 
+@media (min-height: 900px){
+  body {
+    overflow: hidden;
+  }
+}
+
 body {
   background-image: url('/intro-component-with-signup-form/dist/images/bg-intro-mobile.png');
   background-color: $primary-1;
   margin: 1.5em;
   font-family: 'Poppins', sans-serif;
   color: #fef6ed;
-  overflow: hidden;
 }
 
 .main-text {
@@ -52,4 +57,40 @@ body {
   padding: 1.25em;
   border-radius: 0.6em;
   box-shadow: 0 0.5em rgba(20, 20, 20, 0.2);
+
+  input {
+    padding: 1em 1em;
+    color: #3e3c49cf;
+    font-family: 'Poppins', sans-serif;
+    font-weight: weight('medium');
+    border: thin solid rgba(220, 220, 220, 0.9);
+    border-radius: 0.3em;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .submit-btn {
+    background-color: $primary-2;
+    border: none;
+    color: #fff;
+    font-weight: weight('medium');
+    padding: 1.25em 0em;
+    font-size: 0.9rem;
+    border-radius: 0.4em;
+  }
+
+  small {
+    color: $neutral-2;
+    text-align: center;
+    padding: 0 1.4em;
+    font-size: 0.7rem;
+    line-height: 1.8;
+
+    span {
+      color: $primary-1;
+      font-weight: weight('semi-bold');
+    }
+  }
 }
