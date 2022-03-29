@@ -1,0 +1,28 @@
+// Color variables
+
+// Primary colors
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$primary-1: $red;
+$primary-2: $green;
+
+// Accent colors
+$blue: hsl(248, 32%, 49%);
+$accent: $blue;
+
+// Neutral colors
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%); 
+$neutral-1: $dark-blue;
+$neutral-2: $grayish-blue; 
+
+// Typography
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700 
+);
+
+// Viewports
+$large-screen: 800px;

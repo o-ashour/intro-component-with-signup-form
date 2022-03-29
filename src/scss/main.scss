@@ -1,3 +1,9 @@
-body {
-  background-color: aqua;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import 'config';
+@import 'resets';
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+};
+
