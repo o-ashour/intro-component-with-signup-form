@@ -7,3 +7,49 @@
   @return map-get($font-weights, $weight-name);
 };
 
+body {
+  background-image: url('/intro-component-with-signup-form/dist/images/bg-intro-mobile.png');
+  background-color: $primary-1;
+  margin: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  color: #fef6ed;
+  overflow: hidden;
+}
+
+.main-text {
+  margin-top: 5em;
+  text-align: center;
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: weight('bold');
+    margin-bottom: 0.75em;
+  }
+}
+
+.card {
+  background-color: $blue;
+  padding: 1em 4em;
+  color: #fef6ede0;
+  text-align: center;
+  border-radius: 0.6em;
+  font-size: 0.9rem;
+  box-shadow: 0em 0.52em rgba(20, 20, 20, 0.15);
+  margin-top: 4em;
+  margin-bottom: 1.5em;
+
+  span {
+    font-weight: weight('semi-bold');
+    color: #fef6ed;
+  }
+}
+
+.profile-form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  padding: 1.25em;
+  border-radius: 0.6em;
+  box-shadow: 0 0.5em rgba(20, 20, 20, 0.2);
+}
