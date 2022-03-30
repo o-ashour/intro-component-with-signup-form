@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: url('/intro-component-with-signup-form/dist/images/bg-intro-mobile.png');
+  background-image: url('/dist/images/bg-intro-mobile.png');
   background-color: $primary-1;
   margin: 1.5em;
   font-family: 'Poppins', sans-serif;
@@ -86,6 +86,7 @@ body {
 
     .input-error {
       border: 0.17rem solid #d98c8d;
+      color: #d98c8d;
     }
 
     .error-text {
