@@ -21,7 +21,7 @@ function checkInfo(e) {
       inputEL.parentElement.appendChild(errTextEL);
     }
   });
-  // console.log(emailEL.value);
+  
   if (emailEL.value !== '' && !mailRegex.test(emailEL.value)) {
     submitBtnEL.setAttribute('disabled', '');
     emailEL.previousElementSibling.style.display = 'block';

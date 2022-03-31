@@ -135,9 +135,9 @@ body {
 @media (min-width: $large-screen) {
   body {
     display: grid;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: auto 4em auto auto;
-    gap: 1em;
+    grid-template-columns: 0.8fr 4fr 4fr 0.8fr;
+    grid-template-rows: 2em 4em max-content auto;
+    gap: 1.2em 1em;
     overflow: hidden;
   }
 
@@ -148,6 +148,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 0;
+    margin-right: 2.5em;
 
     h1 {
       font-size: 3.1rem;
@@ -177,7 +178,36 @@ body {
   .profile-form {
     grid-column: 3 / span 1;
     grid-row: 3 / 4;
-    padding: 2.4em 2.75em;
-    gap: 1em;
+    padding: 2.75em;
+    gap: 1.3em;
+
+    .input-full {
+      input {
+        padding: 0.9em 2em;
+        font-size: 0.9rem;
+      }
+
+      input:focus {
+        border-color: $neutral-1;
+        font-weight: weight('semi-bold');
+        color: $neutral-1;
+      }
+
+      .error-icon {
+        margin-top: 1em;
+      }
+    }
+
+    .submit-btn {
+      padding: 1.4em 0;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.55;
+    }
+
+    small {
+      line-height: unset;
+    }
   }
 }

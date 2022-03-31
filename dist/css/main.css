@@ -183,11 +183,12 @@ body {
   body {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 4fr 4fr 1fr;
-        grid-template-columns: 1fr 4fr 4fr 1fr;
-    -ms-grid-rows: auto 4em auto auto;
-        grid-template-rows: auto 4em auto auto;
-    gap: 1em;
+    -ms-grid-columns: 0.8fr 4fr 4fr 0.8fr;
+        grid-template-columns: 0.8fr 4fr 4fr 0.8fr;
+    -ms-grid-rows: 2em 4em max-content auto;
+        grid-template-rows: 2em 4em -webkit-max-content auto;
+        grid-template-rows: 2em 4em max-content auto;
+    gap: 1.2em 1em;
     overflow: hidden;
   }
   .main-text {
@@ -206,6 +207,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 0;
+    margin-right: 2.5em;
   }
   .main-text h1 {
     font-size: 3.1rem;
@@ -245,7 +247,28 @@ body {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
-    padding: 2.4em 2.75em;
-    gap: 1em;
+    padding: 2.75em;
+    gap: 1.3em;
+  }
+  .profile-form .input-full input {
+    padding: 0.9em 2em;
+    font-size: 0.9rem;
+  }
+  .profile-form .input-full input:focus {
+    border-color: #3e3c49;
+    font-weight: 600;
+    color: #3e3c49;
+  }
+  .profile-form .input-full .error-icon {
+    margin-top: 1em;
+  }
+  .profile-form .submit-btn {
+    padding: 1.4em 0;
+  }
+  .profile-form .submit-btn:hover {
+    opacity: 0.55;
+  }
+  .profile-form small {
+    line-height: unset;
   }
 }
